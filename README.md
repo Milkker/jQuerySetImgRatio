@@ -37,7 +37,7 @@ $("img").setImgToRatio(9/16)
 
 ## Authors
 
-* **Milkker** - *dotNet MVC depldeveloper* - [Milkker](https://github.com/Milkker)
+* **Milkker** - *dotNet MVC developer* - [Milkker](https://github.com/Milkker)
 
 ## License
 
