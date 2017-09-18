@@ -24,10 +24,11 @@ $("img").setImgToRatio()
 ```
 ```javascript
 $("img").setImgToRatio(3/4)
+```
 
 ## Authors
 
-* **Milkker** - *dotNet MVC developer* - [Milkker](https://github.com/Milkker)
+***Milkker*** - *dotNet MVC developer* - [Milkker](https://github.com/Milkker)
 
 ## License
 
