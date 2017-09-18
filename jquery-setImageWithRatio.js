@@ -1,4 +1,4 @@
-/*
+﻿/*
  * jQuery Set Image To Ratio
  *
  * https://github.com/Milkker/jQuerySetImgRatio
@@ -19,19 +19,21 @@
 
             //Set the image padding
             var setPadding = function (el) {
-                var _height = $(el).get(0).naturalHeight;
-                var _width = $(el).get(0).naturalWidth;
-                var _oriRatio = _height / _width;
+                var _naturalHeight = $(el).get(0).naturalHeight;
+                var _naturalWidth = $(el).get(0).naturalWidth;
+                var _naturalRatio = _naturalHeight / _naturalWidth;
 
-                if (_oriRatio > ratio) {
-                    var prefix = Math.round(((_height / ratio - _width) / (_height / ratio)) * 10000) / 200;
+                if (_naturalRatio > ratio) {
+                    var newWidth = _naturalHeight / ratio;
+                    var hPrefixRate = ((newWidth - _naturalWidth) / newWidth) * 100 / 2;
 
-                    $(el).css("padding", "0px " + prefix + "%");
+                    $(el).css("padding", "0px " + hPrefixRate + "%");
                 }
-                else if (_oriRatio < ratio) {
-                    var prefix = Math.round(((_width * ratio - _height) / (_width * ratio)) * 10000) / 200;
+                else if (_naturalRatio < ratio) {
+                    var newHeight = _naturalWidth * ratio;
+                    var vPrefixRate = ((newHeight - _naturalHeight) / _naturalWidth) * 100 / 2;
 
-                    $(el).css("padding", prefix + "% 0px");
+                    $(el).css("padding", vPrefixRate + "% 0px");
                 }
             }
 
