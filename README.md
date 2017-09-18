@@ -24,14 +24,6 @@ $("img").setImgToRatio()
 ```
 ```javascript
 $("img").setImgToRatio(3/4)
-```
- 3. You also can use it with Bootstrap library.
-```html
-<img id='imgSample' class='img-responsive' src='http://placehold.it/300x300'>
-```
-```javascript
-$("img").setImgToRatio(9/16)
-```
 
 ## Authors
 
